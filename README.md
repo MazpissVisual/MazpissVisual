@@ -13,7 +13,7 @@
 
 - 📫 How to reach me **mazpissiqbal@gmail.com**
 
-- 📄 Know about my experiences [I was participated on Web Developer Championship](I got First Winner)](I was participated on Web Developer Championship](I got First Winner))
+- 📄 Know about my experiences [I was participated on Web Developer Championship](I got First Winner)
 
 - ⚡ Fun fact **I think I funny**
 
