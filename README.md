@@ -7,15 +7,11 @@
 
 - 🔭 I’m studying on **Darussalam University**
 
-- 🌱 I’m currently learning **Flutter**
-
-- 💬 Ask me about **python, Java, C++, HTML, CSS, SQL**
+- 🌱 I’m currently learning **Kotlin**
 
 - 📫 How to reach me **mazpissiqbal@gmail.com**
 
 - 📄 Know about my experiences I was participated on Web Developer Championship and I got First Winner
-
-- ⚡ Fun fact **I think I funny**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
