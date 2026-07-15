@@ -1,12 +1,16 @@
-<svg viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Courier New',monospace">
+<svg viewBox="0 0 900 1180" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="'JetBrains Mono','Courier New',monospace">
   <!--
     =========================================================
-     GANTI TEKS:
-       - Judul besar  : cari 3x "WILDAN NIAM" (layer glitch) -> ganti semua
-       - Subtitle     : cari "AI RESEARCHER // WEB3 BUILDER"
-       - Handle bar   : cari "wildanniam@github: ~/profile"
-       - Baris boot    : cari class="boot" (4 baris)
-     GANTI WARNA (opsional): ubah nilai variabel warna di dalam blok <style> (cyan / mag / purple / green)
+     SEMUA konten ada di SATU file terminal ini (nggak perlu section
+     tambahan di README). GANTI bagian ini:
+       - Judul besar     : cari 3x "HAVIDZ IQBAL"
+       - Subtitle        : cari "UI/UX // WEB DEV // VIBE CODER"
+       - Handle bar       : cari "mazpissvisual@github: ~/profile"
+       - About (cat bio.txt) : cari komentar "SECTION: ABOUT"
+       - Stack (ls tools) : cari komentar "SECTION: STACK"
+       - Stats            : cari komentar "SECTION: STATS" (pakai <image>
+                              yang narik dari github-readme-stats, otomatis update)
+       - Contact          : cari komentar "SECTION: CONTACT" (link bisa diklik)
     =========================================================
   -->
   <defs>
@@ -16,15 +20,15 @@
     </linearGradient>
     <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#00e5ff" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#00e5ff" stop-opacity="0.5"/>
+      <stop offset="0.5" stop-color="#00e5ff" stop-opacity="0.35"/>
       <stop offset="1" stop-color="#00e5ff" stop-opacity="0"/>
     </linearGradient>
     <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feGaussianBlur stdDeviation="2" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
     <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
-      <rect width="4" height="1" fill="#000000" opacity="0.25"/>
+      <rect width="4" height="1" fill="#000000" opacity="0.2"/>
     </pattern>
     <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
       <path d="M30 0H0V30" fill="none" stroke="#161b22" stroke-width="1"/>
@@ -32,66 +36,42 @@
   </defs>
 
   <style>
-    :root{
-      --cyan:#00e5ff;
-      --mag:#ff2e97;
-      --purple:#8b5cf6;
-      --green:#3fb950;
-      --dim:#7d8590;
-      --fg:#e6edf3;
-    }
     text{ font-family:'JetBrains Mono','Courier New',monospace; }
+    a text, a tspan{ cursor:pointer; }
 
-    /* --- title glitch: RGB split --- */
-    .g-cyan{ fill:var(--cyan); animation:gc 2.6s infinite steps(1); }
-    .g-mag { fill:var(--mag);  animation:gm 2.6s infinite steps(1); }
-    .g-fg  { fill:var(--fg); }
+    .g-cyan{ fill:#00e5ff; animation:gc 2.6s infinite steps(1); }
+    .g-mag { fill:#ff2e97; animation:gm 2.6s infinite steps(1); }
+    .g-fg  { fill:#e6edf3; }
     @keyframes gc{
       0%,7%,100%{transform:translate(0,0);opacity:.9}
       8%{transform:translate(-3px,1px);opacity:.9}
       9%{transform:translate(2px,-1px)}
-      42%{transform:translate(0,0)}
-      43%{transform:translate(-2px,0)}
-      44%{transform:translate(0,0)}
-      70%{transform:translate(0,0)}
-      71%{transform:translate(3px,1px)}
-      72%{transform:translate(0,0)}
+      42%{transform:translate(0,0)} 43%{transform:translate(-2px,0)} 44%{transform:translate(0,0)}
+      70%{transform:translate(0,0)} 71%{transform:translate(3px,1px)} 72%{transform:translate(0,0)}
     }
     @keyframes gm{
       0%,7%,100%{transform:translate(0,0);opacity:.8}
       8%{transform:translate(3px,-1px);opacity:.8}
       9%{transform:translate(-2px,1px)}
-      42%{transform:translate(0,0)}
-      43%{transform:translate(2px,0)}
-      44%{transform:translate(0,0)}
-      70%{transform:translate(0,0)}
-      71%{transform:translate(-3px,-1px)}
-      72%{transform:translate(0,0)}
+      42%{transform:translate(0,0)} 43%{transform:translate(2px,0)} 44%{transform:translate(0,0)}
+      70%{transform:translate(0,0)} 71%{transform:translate(-3px,-1px)} 72%{transform:translate(0,0)}
     }
-    /* full-title occasional flicker */
     .title-wrap{ animation:tflick 5s infinite; }
     @keyframes tflick{
-      0%,96%,100%{opacity:1}
-      97%{opacity:.35}
-      98%{opacity:1}
-      99%{opacity:.6}
+      0%,96%,100%{opacity:1} 97%{opacity:.35} 98%{opacity:1} 99%{opacity:.6}
     }
 
-    /* --- boot lines appear one by one --- */
     .boot{ opacity:0; animation:reveal .4s forwards; }
     .b1{ animation-delay:.2s } .b2{ animation-delay:.7s }
     .b3{ animation-delay:1.2s } .b4{ animation-delay:1.7s }
     @keyframes reveal{ from{opacity:0;transform:translateX(-6px)} to{opacity:1;transform:translateX(0)} }
 
-    /* --- blinking cursor --- */
     .cursor{ animation:blink 1s steps(1) infinite; }
     @keyframes blink{ 50%{opacity:0} }
 
-    /* --- moving scan bar --- */
-    .scanbar{ animation:scan 3.5s linear infinite; }
-    @keyframes scan{ 0%{transform:translateY(-30px)} 100%{transform:translateY(260px)} }
+    .scanbar{ animation:scan 8s linear infinite; }
+    @keyframes scan{ 0%{transform:translateY(-60px)} 100%{transform:translateY(1180px)} }
 
-    /* --- glitch slice bars --- */
     .slice{ opacity:0; animation:slice 4s infinite; }
     .s2{ animation-delay:1.3s } .s3{ animation-delay:2.6s }
     @keyframes slice{
@@ -100,60 +80,114 @@
       2%{opacity:.5;transform:translateX(10px)}
     }
 
-    /* status dot pulse */
     .pulse{ animation:pulse 1.4s ease-in-out infinite; }
     @keyframes pulse{ 0%,100%{opacity:.35} 50%{opacity:1} }
+
+    .fadein{ opacity:0; animation:fi .5s forwards; }
+    @keyframes fi{ from{opacity:0} to{opacity:1} }
+
+    .linkline:hover .ul{ opacity:1; }
+    .ul{ opacity:0; }
   </style>
 
   <!-- background -->
-  <rect width="900" height="260" rx="12" fill="url(#bg)"/>
-  <rect width="900" height="260" rx="12" fill="url(#grid)"/>
+  <rect width="900" height="1180" rx="14" fill="url(#bg)"/>
+  <rect width="900" height="1180" rx="14" fill="url(#grid)"/>
 
-  <!-- terminal title bar -->
-  <rect x="0" y="0" width="900" height="34" rx="12" fill="#161b22"/>
+  <!-- ============ macOS-style title bar ============ -->
+  <rect x="0" y="0" width="900" height="34" rx="14" fill="#161b22"/>
   <rect x="0" y="22" width="900" height="12" fill="#161b22"/>
   <circle cx="22" cy="17" r="6" fill="#ff5f56"/>
   <circle cx="44" cy="17" r="6" fill="#ffbd2e"/>
   <circle cx="66" cy="17" r="6" fill="#27c93f"/>
   <text x="450" y="21" text-anchor="middle" font-size="12" fill="#7d8590">mazpissvisual@github: ~/profile</text>
 
-  <!-- boot sequence lines -->
+  <!-- ============ boot sequence ============ -->
   <g font-size="13" fill="#7d8590">
     <text class="boot b1" x="28" y="64">$ initializing profile<tspan fill="#3fb950">...</tspan> <tspan fill="#3fb950">[OK]</tspan></text>
     <text class="boot b2" x="28" y="86">$ loading modules: <tspan fill="#00e5ff">ui_ux</tspan> <tspan fill="#8b5cf6">web_dev</tspan> <tspan fill="#00e5ff">vibe_coding</tspan></text>
-    <text class="boot b3" x="28" y="108">$ mounting neural_link<tspan fill="#3fb950">...</tspan> <tspan fill="#3fb950">[OK]</tspan></text>
+    <text class="boot b3" x="28" y="108">$ mounting creative_layer<tspan fill="#3fb950">...</tspan> <tspan fill="#3fb950">[OK]</tspan></text>
     <text class="boot b4" x="28" y="130">$ render identity <tspan class="cursor" fill="#00e5ff">_</tspan></text>
   </g>
 
-  <!-- GLITCH TITLE (3 stacked layers) -->
+  <!-- ============ GLITCH TITLE ============ -->
   <g class="title-wrap" filter="url(#glow)">
-    <text class="g-mag"  x="28" y="188" font-size="40" font-weight="700">HAVIDZ IQBAL</text>
-    <text class="g-cyan" x="28" y="188" font-size="40" font-weight="700">HAVIDZ IQBAL</text>
-    <text class="g-fg"   x="28" y="188" font-size="40" font-weight="700">HAVIDZ IQBAL</text>
+    <text class="g-mag"  x="28" y="188" font-size="42" font-weight="700">HAVIDZ IQBAL</text>
+    <text class="g-cyan" x="28" y="188" font-size="42" font-weight="700">HAVIDZ IQBAL</text>
+    <text class="g-fg"   x="28" y="188" font-size="42" font-weight="700">HAVIDZ IQBAL</text>
   </g>
-
-  <!-- subtitle -->
   <text x="30" y="216" font-size="14" fill="#8b5cf6" letter-spacing="1.5">UI/UX <tspan fill="#7d8590">//</tspan> WEB DEV <tspan fill="#7d8590">//</tspan> VIBE CODER</text>
 
-  <!-- status -->
-  <g transform="translate(720,178)">
+  <g transform="translate(700,178)">
     <circle class="pulse" cx="0" cy="0" r="5" fill="#3fb950"/>
-    <text x="14" y="4" font-size="13" fill="#3fb950" letter-spacing="1">SYSTEM ONLINE</text>
-    <text x="14" y="24" font-size="11" fill="#7d8590">agents: autonomous</text>
+    <text x="14" y="4" font-size="13" fill="#3fb950" letter-spacing="1">ONLINE</text>
+    <text x="14" y="24" font-size="11" fill="#7d8590">status: shipping</text>
   </g>
 
-  <!-- glitch slice bars -->
-  <g>
-    <rect class="slice s1" x="28" y="160" width="360" height="8" fill="#00e5ff" opacity="0"/>
-    <rect class="slice s2" x="28" y="176" width="300" height="6" fill="#ff2e97" opacity="0"/>
-    <rect class="slice s3" x="28" y="150" width="200" height="5" fill="#8b5cf6" opacity="0"/>
+  <rect class="slice s1" x="28" y="160" width="360" height="8" fill="#00e5ff" opacity="0"/>
+  <rect class="slice s2" x="28" y="176" width="300" height="6" fill="#ff2e97" opacity="0"/>
+  <rect class="slice s3" x="28" y="150" width="200" height="5" fill="#8b5cf6" opacity="0"/>
+
+  <line x1="28" y1="240" x2="872" y2="240" stroke="#21262d" stroke-width="1"/>
+
+  <!-- ============ SECTION: ABOUT ============ -->
+  <text class="fadein" x="28" y="270" font-size="12" fill="#00e5ff" letter-spacing="1" style="animation-delay:2s">$ cat about.txt</text>
+  <g class="fadein" font-size="13" fill="#c9d1d9" style="animation-delay:2.2s">
+    <text x="28" y="296">Gue suka bikin sesuatu yang enak dipandang, sekaligus enak dipakai —</text>
+    <text x="28" y="316">makanya kerjanya nyambung antara <tspan fill="#8b5cf6">UI/UX</tspan> dan <tspan fill="#8b5cf6">ngoding website</tspan>.</text>
+    <text x="28" y="336">Belakangan keasikan sama gaya <tspan fill="#00e5ff">vibe coding</tspan>: nge-prompt, lihat</text>
+    <text x="28" y="356">hasilnya jadi, otak-atik sampai pas. Cepat, tapi tetap detail.</text>
   </g>
 
-  <!-- scanlines overlay -->
-  <rect x="0" y="34" width="900" height="226" fill="url(#scanlines)"/>
-  <!-- moving scan bar -->
-  <rect class="scanbar" x="0" y="0" width="900" height="30" fill="url(#scanGrad)" opacity="0.35"/>
+  <line x1="28" y1="386" x2="872" y2="386" stroke="#21262d" stroke-width="1"/>
+
+  <!-- ============ SECTION: STACK ============ -->
+  <text class="fadein" x="28" y="414" font-size="12" fill="#00e5ff" letter-spacing="1" style="animation-delay:2.4s">$ ls stack/</text>
+  <g class="fadein" style="animation-delay:2.6s">
+    <image x="28" y="428" width="844" height="56" xlink:href="https://skillicons.dev/icons?i=figma,xd,html,css,js,tailwind,react,nextjs,vscode,git,github,firebase&amp;theme=dark" preserveAspectRatio="xMinYMid meet"/>
+  </g>
+
+  <line x1="28" y1="504" x2="872" y2="504" stroke="#21262d" stroke-width="1"/>
+
+  <!-- ============ SECTION: ACHIEVEMENT ============ -->
+  <text class="fadein" x="28" y="532" font-size="12" fill="#00e5ff" letter-spacing="1" style="animation-delay:2.8s">$ cat award.log</text>
+  <text class="fadein" x="28" y="558" font-size="13" fill="#ffbd2e" style="animation-delay:3s">🏆 1st Winner — Web Developer Championship</text>
+
+  <line x1="28" y1="586" x2="872" y2="586" stroke="#21262d" stroke-width="1"/>
+
+  <!-- ============ SECTION: STATS ============ -->
+  <text class="fadein" x="28" y="614" font-size="12" fill="#00e5ff" letter-spacing="1" style="animation-delay:3.2s">$ ./run --stats</text>
+  <g class="fadein" style="animation-delay:3.4s">
+    <image x="28"  y="630" width="410" height="180" xlink:href="https://github-readme-stats.vercel.app/api?username=mazpissvisual&amp;show_icons=true&amp;theme=tokyonight&amp;include_all_commits=true&amp;count_private=true&amp;hide_border=true&amp;bg_color=0D1117&amp;title_color=00E5FF&amp;icon_color=8B5CF6" preserveAspectRatio="xMinYMin meet"/>
+    <image x="462" y="630" width="410" height="180" xlink:href="https://github-readme-stats.vercel.app/api/top-langs/?username=mazpissvisual&amp;layout=compact&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0D1117&amp;title_color=00E5FF&amp;langs_count=8" preserveAspectRatio="xMinYMin meet"/>
+    <image x="28"  y="822" width="844" height="120" xlink:href="https://streak-stats.demolab.com?user=mazpissvisual&amp;theme=tokyonight&amp;hide_border=true&amp;background=0D1117&amp;stroke=00E5FF&amp;ring=8B5CF6&amp;fire=00E5FF&amp;currStreakLabel=00E5FF" preserveAspectRatio="xMinYMin meet"/>
+  </g>
+
+  <line x1="28" y1="960" x2="872" y2="960" stroke="#21262d" stroke-width="1"/>
+
+  <!-- ============ SECTION: CONTACT ============ -->
+  <text class="fadein" x="28" y="988" font-size="12" fill="#00e5ff" letter-spacing="1" style="animation-delay:3.6s">$ cat contact.json</text>
+
+  <g class="fadein" font-size="13" style="animation-delay:3.8s">
+    <a xlink:href="https://www.linkedin.com/in/havidz-muhammad-iqbal-002706244/" target="_blank">
+      <text x="28" y="1014" fill="#c9d1d9">"linkedin"  <tspan fill="#7d8590">:</tspan> <tspan fill="#00e5ff">"havidz-muhammad-iqbal"</tspan></text>
+    </a>
+    <a xlink:href="https://instagram.com/maz_piss" target="_blank">
+      <text x="28" y="1036" fill="#c9d1d9">"instagram" <tspan fill="#7d8590">:</tspan> <tspan fill="#ff2e97">"@maz_piss"</tspan></text>
+    </a>
+    <a xlink:href="mailto:mazpissiqbal@gmail.com">
+      <text x="28" y="1058" fill="#c9d1d9">"email"     <tspan fill="#7d8590">:</tspan> <tspan fill="#8b5cf6">"mazpissiqbal@gmail.com"</tspan></text>
+    </a>
+  </g>
+
+  <!-- footer -->
+  <text x="450" y="1120" text-anchor="middle" font-size="13" fill="#7d8590" font-style="italic">"Design it right. Ship it fast. Vibe with the code."</text>
+  <text x="450" y="1150" text-anchor="middle" font-size="11" fill="#484f58">$ end of file <tspan class="cursor" fill="#484f58">_</tspan></text>
+
+  <!-- overlays -->
+  <rect x="0" y="34" width="900" height="1146" fill="url(#scanlines)"/>
+  <rect class="scanbar" x="0" y="0" width="900" height="60" fill="url(#scanGrad)" opacity="0.28"/>
 
   <!-- neon border -->
-  <rect x="1" y="1" width="898" height="258" rx="12" fill="none" stroke="#00e5ff" stroke-opacity="0.25" stroke-width="1.5"/>
+  <rect x="1" y="1" width="898" height="1178" rx="14" fill="none" stroke="#00e5ff" stroke-opacity="0.25" stroke-width="1.5"/>
 </svg>
