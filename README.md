@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/main/assets/terminal-banner.svg" alt="banner" width="100%" />
+  <img src="https://github.com/MazpissVisual/MazpissVisual/blob/main/assets/terminal-banner.svg" alt="banner" width="100%" />
 </p>
 
 <!-- ===================== TYPING INTRO ===================== -->
