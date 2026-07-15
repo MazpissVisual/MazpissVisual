@@ -1,59 +1,102 @@
-![MasterHead](https://camo.githubusercontent.com/0850a9b90bf720b08cafe764aea52d8cf2cc7048d4f8080297e8988b76bb08b8/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f7375706572666f6c696f2f696d6167652f75706c6f61642f76313632303638393937392f36383734373437303733336132663266363932653730363936653639366436373265363336663664326636663732363936373639366536313663373332663633333632663333333332663633333232663633333633333333363333323330363536343635333833323636333036353330363336353634333736343335333733303634363236353333363133313636333332653637363936365f796a756832732e676966)
-<h1 align="center">Hi 👋, I'm Havidz Muhammad Iqbal</h1>
-<h3 align="center">A passionate frontend developer from Indonesia</h3>
-<img align="right" alt="Coding" width="400" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif">
-
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=mazpissvisual&label=Profile%20views&color=0e75b6&style=flat" alt="mazpissvisual" /> </p>
-
-- 🔭 I’m studying on **Darussalam University**
-
-- 🌱 I’m currently learning **Kotlin**
-
-- 📫 How to reach me **mazpissiqbal@gmail.com**
-
-- 📄 Know about my experiences I was participated on Web Developer Championship and I got First Winner
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/https://www.linkedin.com/in/havidz-muhammad-iqbal-002706244/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/havidz-iqbal-002706244/" height="30" width="40" /></a>
-<a href="https://instagram.com/maz_piss" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="maz_piss" height="30" width="40" /></a>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/main/assets/terminal-banner.svg" alt="banner" width="100%" />
 </p>
 
-<h3 align="left">Languages and Tools:</h3>
+<!-- ===================== TYPING INTRO ===================== -->
+<div align="center">
 
-<p align="left"> 
-  <a href="https://developer.android.com" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/> 
-  </a> 
-  <a href="https://www.blender.org/" target="_blank" rel="noreferrer"> 
-    <img src="https://download.blender.org/branding/community/blender_community_badge_white.svg" alt="blender" width="40" height="40"/> 
-  </a> 
-  <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> 
-  </a> 
-  <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> 
-  </a> 
-  <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> 
-    <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> 
-  </a> 
-  <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> 
-    <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> 
-  </a> 
-  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> 
-  </a> 
-  <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> 
-  </a> 
-  <a href="https://www.adobe.com/products/xd.html" target="_blank" rel="noreferrer"> 
-    <img src="https://cdn.worldvectorlogo.com/logos/adobe-xd.svg" alt="xd" width="40" height="40"/> 
-  </a> 
-</p>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=26&duration=3000&pause=800&color=00E5FF&center=true&vCenter=true&width=750&height=60&lines=Havidz+Muhammad+Iqbal;UI%2FUX+%7C+Website+Developer;Vibe+Coding+Enthusiast+%E2%9A%A1" alt="typing" />
 
+<img src="https://komarev.com/ghpvc/?username=mazpissvisual&label=PROFILE+VIEWS&color=00e5ff&style=for-the-badge" alt="views" />
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=mazpissvisual&show_icons=true&locale=en&layout=compact" alt="mazpissvisual" /></p>
+</div>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=mazpissvisual&show_icons=true&locale=en" alt="mazpissvisual" /></p>
+<!-- ===================== TERMINAL SYSTEM INFO ===================== -->
+```ansi
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=mazpissvisual&" alt="mazpissvisual" /></p>
+  ┌─[ SYSTEM.INFO ] ─── ./profile --live ────────────────────────┐
+  │                                                              │
+  │   Subject ......... Havidz Muhammad Iqbal                    │
+  │   Role ............ UI/UX Designer & Website Developer       │
+  │   Focus ........... Vibe Coding · AI-assisted development    │
+  │   Base ............ Indonesia                                │
+  │   Status .......... Designing / Shipping ▓▓▓▓▓▓▓▓░░ 80%      │
+  │                                                              │
+  │   > CURRENT.MODE                                             │
+  │     building   :: interfaces that feel right, not just work  │
+  │     workflow   :: prompt -> prototype -> ship                │
+  │     tools      :: Figma / VS Code / AI pair-programming      │
+  │                                                              │
+  │   > TRACK.RECORD                                             │
+  │     award      :: 1st Winner, Web Developer Championship     │
+  │                                                              │
+  └──────────────────────────────────────────────────────────────┘
+```
+<!-- GANTI: sesuaikan lagi kalau ada detail yang mau ditambah/dikurangi -->
+
+<!-- ===================== ABOUT ===================== -->
+### 🧭 About
+
+- 🎨 Fokus di **UI/UX Design** & **Website Development** — dari wireframe sampai kode jadi.
+- ⚡ **Vibe coder** — suka ngebangun cepat pakai AI pair-programming (prompt-to-prototype), tapi tetap jaga detail desain.
+- 🌱 Lagi eksplorasi **Next.js**, **Tailwind CSS**, dan workflow AI-assisted development.
+- 🏆 Juara 1 di **Web Developer Championship**.
+- 📫 Kontak: **mazpissiqbal@gmail.com**
+
+<!-- GANTI: baris-baris di atas sesuai progres/fokus lo saat ini -->
+
+<!-- ===================== TECH & TOOLS ===================== -->
+<h3 align="center">🛠️ Design & Dev Toolkit</h3>
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=figma,xd,html,css,js,tailwind,react,nextjs,vscode,git,github,firebase&theme=dark" alt="stack" />
+
+</div>
+<!-- GANTI: daftar ikon di 'i=' — kalau mau tambah Blender/Photoshop, tinggal tambah ",blender,photoshop" -->
+
+<!-- ===================== VIBE CODING BADGE ===================== -->
+<div align="center">
+
+<img src="https://img.shields.io/badge/POWERED%20BY-Vibe%20Coding-00E5FF?style=for-the-badge&logo=sparkles&logoColor=white&labelColor=0d1117" alt="vibe coding" />
+<img src="https://img.shields.io/badge/AI%20PAIR-Claude%20%7C%20Copilot%20%7C%20Cursor-8B5CF6?style=for-the-badge&labelColor=0d1117" alt="ai tools" />
+
+</div>
+
+<!-- ===================== GITHUB STATS ===================== -->
+<h3 align="center">📊 Stats</h3>
+
+<div align="center">
+
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=mazpissvisual&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=8B5CF6" alt="stats" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mazpissvisual&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&langs_count=8" alt="langs" />
+
+</div>
+
+<div align="center">
+
+<img src="https://streak-stats.demolab.com?user=mazpissvisual&theme=tokyonight&hide_border=true&background=0D1117&stroke=00E5FF&ring=8B5CF6&fire=00E5FF&currStreakLabel=00E5FF" alt="streak" />
+
+</div>
+
+<!-- ===================== CONNECT ===================== -->
+<h3 align="center">🌐 Connect</h3>
+
+<div align="center">
+
+<a href="https://www.linkedin.com/in/havidz-muhammad-iqbal-002706244/" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin" />
+</a>
+<a href="https://instagram.com/maz_piss" target="_blank">
+  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="ig" />
+</a>
+<a href="mailto:mazpissiqbal@gmail.com">
+  <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="email" />
+</a>
+
+</div>
+
+<div align="center">
+<br>
+<sub>⚡ <i>"Design it right. Ship it fast. Vibe with the code."</i> ⚡</sub>
+</div>
