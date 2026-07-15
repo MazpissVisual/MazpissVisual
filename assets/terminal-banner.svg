@@ -1,16 +1,19 @@
-<svg viewBox="0 0 900 1180" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="'JetBrains Mono','Courier New',monospace">
+<svg viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="'JetBrains Mono','Courier New',monospace">
   <!--
     =========================================================
-     SEMUA konten ada di SATU file terminal ini (nggak perlu section
-     tambahan di README). GANTI bagian ini:
-       - Judul besar     : cari 3x "HAVIDZ IQBAL"
-       - Subtitle        : cari "UI/UX // WEB DEV // VIBE CODER"
-       - Handle bar       : cari "mazpissvisual@github: ~/profile"
-       - About (cat bio.txt) : cari komentar "SECTION: ABOUT"
-       - Stack (ls tools) : cari komentar "SECTION: STACK"
-       - Stats            : cari komentar "SECTION: STATS" (pakai <image>
-                              yang narik dari github-readme-stats, otomatis update)
-       - Contact          : cari komentar "SECTION: CONTACT" (link bisa diklik)
+     CATATAN PENTING:
+     GitHub otomatis MENGHAPUS tag <image> yang narik URL eksternal
+     dari file SVG yang dirender langsung (alasan keamanan). Karena itu
+     stack icons & stats card TIDAK BISA ditaro di dalam file SVG ini --
+     itu harus ditaro sebagai <img> biasa di README.md (lihat file README).
+     File SVG ini isinya cuma bagian yang statis/animasi: title, about, contact.
+
+     GANTI TEKS:
+       - Judul besar   : cari 3x "HAVIDZ IQBAL"
+       - Subtitle      : cari "UI/UX // WEB DEV // VIBE CODER"
+       - Handle bar    : cari "mazpissvisual@github: ~/profile"
+       - About         : cari komentar "SECTION: ABOUT"
+       - Contact       : cari komentar "SECTION: CONTACT"
     =========================================================
   -->
   <defs>
@@ -37,7 +40,6 @@
 
   <style>
     text{ font-family:'JetBrains Mono','Courier New',monospace; }
-    a text, a tspan{ cursor:pointer; }
 
     .g-cyan{ fill:#00e5ff; animation:gc 2.6s infinite steps(1); }
     .g-mag { fill:#ff2e97; animation:gm 2.6s infinite steps(1); }
@@ -69,8 +71,8 @@
     .cursor{ animation:blink 1s steps(1) infinite; }
     @keyframes blink{ 50%{opacity:0} }
 
-    .scanbar{ animation:scan 8s linear infinite; }
-    @keyframes scan{ 0%{transform:translateY(-60px)} 100%{transform:translateY(1180px)} }
+    .scanbar{ animation:scan 6s linear infinite; }
+    @keyframes scan{ 0%{transform:translateY(-60px)} 100%{transform:translateY(600px)} }
 
     .slice{ opacity:0; animation:slice 4s infinite; }
     .s2{ animation-delay:1.3s } .s3{ animation-delay:2.6s }
@@ -85,16 +87,13 @@
 
     .fadein{ opacity:0; animation:fi .5s forwards; }
     @keyframes fi{ from{opacity:0} to{opacity:1} }
-
-    .linkline:hover .ul{ opacity:1; }
-    .ul{ opacity:0; }
   </style>
 
   <!-- background -->
-  <rect width="900" height="1180" rx="14" fill="url(#bg)"/>
-  <rect width="900" height="1180" rx="14" fill="url(#grid)"/>
+  <rect width="900" height="600" rx="14" fill="url(#bg)"/>
+  <rect width="900" height="600" rx="14" fill="url(#grid)"/>
 
-  <!-- ============ macOS-style title bar ============ -->
+  <!-- title bar -->
   <rect x="0" y="0" width="900" height="34" rx="14" fill="#161b22"/>
   <rect x="0" y="22" width="900" height="12" fill="#161b22"/>
   <circle cx="22" cy="17" r="6" fill="#ff5f56"/>
@@ -102,7 +101,7 @@
   <circle cx="66" cy="17" r="6" fill="#27c93f"/>
   <text x="450" y="21" text-anchor="middle" font-size="12" fill="#7d8590">mazpissvisual@github: ~/profile</text>
 
-  <!-- ============ boot sequence ============ -->
+  <!-- boot sequence -->
   <g font-size="13" fill="#7d8590">
     <text class="boot b1" x="28" y="64">$ initializing profile<tspan fill="#3fb950">...</tspan> <tspan fill="#3fb950">[OK]</tspan></text>
     <text class="boot b2" x="28" y="86">$ loading modules: <tspan fill="#00e5ff">ui_ux</tspan> <tspan fill="#8b5cf6">web_dev</tspan> <tspan fill="#00e5ff">vibe_coding</tspan></text>
@@ -110,7 +109,7 @@
     <text class="boot b4" x="28" y="130">$ render identity <tspan class="cursor" fill="#00e5ff">_</tspan></text>
   </g>
 
-  <!-- ============ GLITCH TITLE ============ -->
+  <!-- GLITCH TITLE -->
   <g class="title-wrap" filter="url(#glow)">
     <text class="g-mag"  x="28" y="188" font-size="42" font-weight="700">HAVIDZ IQBAL</text>
     <text class="g-cyan" x="28" y="188" font-size="42" font-weight="700">HAVIDZ IQBAL</text>
@@ -141,53 +140,31 @@
 
   <line x1="28" y1="386" x2="872" y2="386" stroke="#21262d" stroke-width="1"/>
 
-  <!-- ============ SECTION: STACK ============ -->
-  <text class="fadein" x="28" y="414" font-size="12" fill="#00e5ff" letter-spacing="1" style="animation-delay:2.4s">$ ls stack/</text>
-  <g class="fadein" style="animation-delay:2.6s">
-    <image x="28" y="428" width="844" height="56" xlink:href="https://skillicons.dev/icons?i=figma,xd,html,css,js,tailwind,react,nextjs,vscode,git,github,firebase&amp;theme=dark" preserveAspectRatio="xMinYMid meet"/>
-  </g>
-
-  <line x1="28" y1="504" x2="872" y2="504" stroke="#21262d" stroke-width="1"/>
-
   <!-- ============ SECTION: ACHIEVEMENT ============ -->
-  <text class="fadein" x="28" y="532" font-size="12" fill="#00e5ff" letter-spacing="1" style="animation-delay:2.8s">$ cat award.log</text>
-  <text class="fadein" x="28" y="558" font-size="13" fill="#ffbd2e" style="animation-delay:3s">🏆 1st Winner — Web Developer Championship</text>
+  <text class="fadein" x="28" y="414" font-size="12" fill="#00e5ff" letter-spacing="1" style="animation-delay:2.4s">$ cat award.log</text>
+  <text class="fadein" x="28" y="440" font-size="13" fill="#ffbd2e" style="animation-delay:2.6s">🏆 1st Winner — Web Developer Championship</text>
 
-  <line x1="28" y1="586" x2="872" y2="586" stroke="#21262d" stroke-width="1"/>
-
-  <!-- ============ SECTION: STATS ============ -->
-  <text class="fadein" x="28" y="614" font-size="12" fill="#00e5ff" letter-spacing="1" style="animation-delay:3.2s">$ ./run --stats</text>
-  <g class="fadein" style="animation-delay:3.4s">
-    <image x="28"  y="630" width="410" height="180" xlink:href="https://github-readme-stats.vercel.app/api?username=mazpissvisual&amp;show_icons=true&amp;theme=tokyonight&amp;include_all_commits=true&amp;count_private=true&amp;hide_border=true&amp;bg_color=0D1117&amp;title_color=00E5FF&amp;icon_color=8B5CF6" preserveAspectRatio="xMinYMin meet"/>
-    <image x="462" y="630" width="410" height="180" xlink:href="https://github-readme-stats.vercel.app/api/top-langs/?username=mazpissvisual&amp;layout=compact&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0D1117&amp;title_color=00E5FF&amp;langs_count=8" preserveAspectRatio="xMinYMin meet"/>
-    <image x="28"  y="822" width="844" height="120" xlink:href="https://streak-stats.demolab.com?user=mazpissvisual&amp;theme=tokyonight&amp;hide_border=true&amp;background=0D1117&amp;stroke=00E5FF&amp;ring=8B5CF6&amp;fire=00E5FF&amp;currStreakLabel=00E5FF" preserveAspectRatio="xMinYMin meet"/>
-  </g>
-
-  <line x1="28" y1="960" x2="872" y2="960" stroke="#21262d" stroke-width="1"/>
+  <line x1="28" y1="470" x2="872" y2="470" stroke="#21262d" stroke-width="1"/>
 
   <!-- ============ SECTION: CONTACT ============ -->
-  <text class="fadein" x="28" y="988" font-size="12" fill="#00e5ff" letter-spacing="1" style="animation-delay:3.6s">$ cat contact.json</text>
+  <text class="fadein" x="28" y="498" font-size="12" fill="#00e5ff" letter-spacing="1" style="animation-delay:2.8s">$ cat contact.json</text>
 
-  <g class="fadein" font-size="13" style="animation-delay:3.8s">
+  <g class="fadein" font-size="13" style="animation-delay:3s">
     <a xlink:href="https://www.linkedin.com/in/havidz-muhammad-iqbal-002706244/" target="_blank">
-      <text x="28" y="1014" fill="#c9d1d9">"linkedin"  <tspan fill="#7d8590">:</tspan> <tspan fill="#00e5ff">"havidz-muhammad-iqbal"</tspan></text>
+      <text x="28" y="524" fill="#c9d1d9">"linkedin"  <tspan fill="#7d8590">:</tspan> <tspan fill="#00e5ff">"havidz-muhammad-iqbal"</tspan></text>
     </a>
     <a xlink:href="https://instagram.com/maz_piss" target="_blank">
-      <text x="28" y="1036" fill="#c9d1d9">"instagram" <tspan fill="#7d8590">:</tspan> <tspan fill="#ff2e97">"@maz_piss"</tspan></text>
+      <text x="28" y="546" fill="#c9d1d9">"instagram" <tspan fill="#7d8590">:</tspan> <tspan fill="#ff2e97">"@maz_piss"</tspan></text>
     </a>
     <a xlink:href="mailto:mazpissiqbal@gmail.com">
-      <text x="28" y="1058" fill="#c9d1d9">"email"     <tspan fill="#7d8590">:</tspan> <tspan fill="#8b5cf6">"mazpissiqbal@gmail.com"</tspan></text>
+      <text x="28" y="568" fill="#c9d1d9">"email"     <tspan fill="#7d8590">:</tspan> <tspan fill="#8b5cf6">"mazpissiqbal@gmail.com"</tspan></text>
     </a>
   </g>
 
-  <!-- footer -->
-  <text x="450" y="1120" text-anchor="middle" font-size="13" fill="#7d8590" font-style="italic">"Design it right. Ship it fast. Vibe with the code."</text>
-  <text x="450" y="1150" text-anchor="middle" font-size="11" fill="#484f58">$ end of file <tspan class="cursor" fill="#484f58">_</tspan></text>
-
   <!-- overlays -->
-  <rect x="0" y="34" width="900" height="1146" fill="url(#scanlines)"/>
+  <rect x="0" y="34" width="900" height="566" fill="url(#scanlines)"/>
   <rect class="scanbar" x="0" y="0" width="900" height="60" fill="url(#scanGrad)" opacity="0.28"/>
 
   <!-- neon border -->
-  <rect x="1" y="1" width="898" height="1178" rx="14" fill="none" stroke="#00e5ff" stroke-opacity="0.25" stroke-width="1.5"/>
+  <rect x="1" y="1" width="898" height="598" rx="14" fill="none" stroke="#00e5ff" stroke-opacity="0.25" stroke-width="1.5"/>
 </svg>
