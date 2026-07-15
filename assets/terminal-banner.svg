@@ -2,10 +2,10 @@
   <!--
     =========================================================
      CATATAN PENTING:
-     GitHub otomatis MENGHAPUS tag <image> yang narik URL eksternal
+     GitHub otomatis MENGHAPUS tag image yang narik URL eksternal
      dari file SVG yang dirender langsung (alasan keamanan). Karena itu
-     stack icons & stats card TIDAK BISA ditaro di dalam file SVG ini --
-     itu harus ditaro sebagai <img> biasa di README.md (lihat file README).
+     stack icons dan stats card TIDAK BISA ditaro di dalam file SVG ini,
+     itu harus ditaro sebagai img biasa di README.md (lihat file README).
      File SVG ini isinya cuma bagian yang statis/animasi: title, about, contact.
 
      GANTI TEKS:
