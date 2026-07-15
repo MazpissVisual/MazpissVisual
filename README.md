@@ -13,5 +13,5 @@
 -->
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mazpissvisual/mazpissvisual/main/assets/terminal-banner.svg" alt="terminal profile" width="100%" />
+  <img src="https://github.com/MazpissVisual/MazpissVisual/blob/main/assets/terminal-banner.svg" alt="terminal profile" width="100%" />
 </p>
